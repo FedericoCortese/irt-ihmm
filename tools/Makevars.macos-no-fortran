@@ -1,0 +1,6 @@
+# Optional local workaround for a Mac R configured with missing /opt/gfortran.
+# R's dynamic BLAS/LAPACK are still linked by the package's src/Makevars.
+FLIBS =
+# The local R headers request a diagnostic unknown to this Apple clang version.
+# This silences only the warning about that unknown diagnostic, not code warnings.
+CXX17FLAGS = -g -O2 -Wall -Wno-unknown-warning-option

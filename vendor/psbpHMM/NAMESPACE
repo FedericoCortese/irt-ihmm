@@ -1,0 +1,5 @@
+useDynLib(psbpHMM, .registration=TRUE)
+importFrom(Rcpp, evalCpp)
+importFrom("stats", "cov", "dnorm", "pnorm", "quantile", "rWishart",
+               "rbeta", "rgamma", "rgeom", "rnorm", "runif")
+exportPattern("^[[:alpha:]]+")

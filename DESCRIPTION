@@ -1,0 +1,23 @@
+Package: irtihmm
+Type: Package
+Title: Joint Item Responses and Response Times with Infinite Hidden Markov States
+Version: 0.0.1
+Authors@R: c(person("IRT-iHMM", "contributors", role = c("aut", "cre"),
+    email = "maintainer@example.org"),
+    person("Lauren", "Hoskovec", role = c("aut", "cph"),
+    comment = "Original psbpHMM transition routines; see UPSTREAM.md"))
+Description: Research implementation of a joint Rasch and log-response-time
+    model with Gaussian copula emissions and covariate-dependent probit
+    stick-breaking hidden Markov transitions. Includes finite-state reference
+    inference, adaptive beam sampling and Gaussian location recovery preserving
+    the original hierarchical priors. Transition routines are adapted from
+    Hoskovec's psbpHMM package.
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 4.1)
+SystemRequirements: C++17
+Imports: Rcpp, stats, utils, graphics, grDevices
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat (>= 3.0.0), salso (>= 0.3.80)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
