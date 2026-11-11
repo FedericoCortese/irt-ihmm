@@ -10,7 +10,7 @@ presented, $X_{pi}$ the binary response, and $Y_{pi}$ the log response time.
 Conditional on regime $C_{pi}=s$, the marginal models are
 
 $$
-\operatorname{logit}\Pr(X_{pi}=1\mid C_{pi}=s)
+\mathrm{logit}\Pr(X_{pi}=1\mid C_{pi}=s)
   = b_{j_{pi}} + d_p + a_s,
 $$
 
